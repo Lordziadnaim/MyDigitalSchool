@@ -4,19 +4,19 @@ import { staticFile } from "remotion";
 /**
  * Typography — self-hosted variable fonts in public/fonts/ (no network
  * needed at render time).
- * - Display: Montserrat 500–900 (bold geometric sans, close to the
- *   school's headline style).
+ * Same pairing as the official homepage (mydigitalschool.com):
+ * - Display: Bricolage Grotesque 500–800 (ExtraBold for titles).
  * - Text: Inter 400–700, for captions and supporting copy.
  *
- * To use the school's official font, drop its files in public/fonts/ and
- * change the `family` / `url` below. `loadFont()` blocks rendering until
+ * To add or swap a font, drop its files in public/fonts/ and edit the
+ * `faces` list below. `loadFont()` blocks rendering until
  * the font is ready, so frames never render with a fallback font.
  */
 const DISPLAY_FAMILY = "MDS Display";
 const TEXT_FAMILY = "MDS Text";
 
 /** CSS font stacks to use in `fontFamily`. */
-export const displayFont = `"${DISPLAY_FAMILY}", Montserrat, Arial, sans-serif`;
+export const displayFont = `"${DISPLAY_FAMILY}", "Bricolage Grotesque", Arial, sans-serif`;
 export const textFont = `"${TEXT_FAMILY}", Inter, Arial, sans-serif`;
 
 const LATIN =
@@ -27,15 +27,15 @@ const LATIN_EXT =
 const faces = [
   {
     family: DISPLAY_FAMILY,
-    file: "fonts/Montserrat-latin.woff2",
+    file: "fonts/BricolageGrotesque-latin.woff2",
     range: LATIN,
-    weight: "500 900",
+    weight: "500 800",
   },
   {
     family: DISPLAY_FAMILY,
-    file: "fonts/Montserrat-latin-ext.woff2",
+    file: "fonts/BricolageGrotesque-latin-ext.woff2",
     range: LATIN_EXT,
-    weight: "500 900",
+    weight: "500 800",
   },
   {
     family: TEXT_FAMILY,

@@ -285,42 +285,52 @@
     {
       "id": "s7",
       "audio": "voiceover/s7.mp3",
-      "durationMs": 19069,
+      "durationMs": 25078,
       "captions": [
         {
           "text": "C'est exactement ce que propose MyDigitalSchool.",
           "startMs": 0,
-          "endMs": 3015
+          "endMs": 3011
         },
         {
           "text": "L'école des métiers du digital.",
-          "startMs": 3015,
-          "endMs": 5124
+          "startMs": 3011,
+          "endMs": 5116
         },
         {
           "text": "17 campus en France.",
-          "startMs": 5124,
-          "endMs": 6973
+          "startMs": 5116,
+          "endMs": 6860
         },
         {
-          "text": "Des Bachelors et des MBA, en initial ou en alternance.",
-          "startMs": 6973,
-          "endMs": 10814
+          "text": "20 formations, du BTS au MBA,",
+          "startMs": 6860,
+          "endMs": 9812
         },
         {
-          "text": "Développement web, webdesign, marketing digital,",
-          "startMs": 10814,
-          "endMs": 14844
+          "text": "toutes certifiées par l'État, en initial ou en alternance.",
+          "startMs": 9812,
+          "endMs": 13425
         },
         {
-          "text": "data, création numérique.",
-          "startMs": 14844,
-          "endMs": 16134
+          "text": "Marketing digital, design et création web,",
+          "startMs": 13425,
+          "endMs": 16345
         },
         {
-          "text": "Et 95 % d'insertion professionnelle.",
-          "startMs": 16134,
-          "endMs": 19319
+          "text": "informatique et développement.",
+          "startMs": 16345,
+          "endMs": 18003
+        },
+        {
+          "text": "Plus de 1 800 entreprises partenaires qui recrutent ses alternants.",
+          "startMs": 18003,
+          "endMs": 21621
+        },
+        {
+          "text": "Et 82 % de taux d'insertion après un MBA.",
+          "startMs": 21621,
+          "endMs": 25328
         }
       ]
     },

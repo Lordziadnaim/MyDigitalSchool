@@ -57,9 +57,15 @@ avoir régénéré un fichier dans `public/voiceover/`, lancez
 `npm run sync:voiceover` : durées, sous-titres et synchronisation des
 animations se recalculent seuls.
 
+## Charte graphique
+
+Reprise de la home page officielle et du logo : violet `#662483`, turquoise
+`#2DB8C5`, rose `#E71D73`, cyan clair `#E0F5F7`, gris `#3C3C3B` ;
+Bricolage Grotesque + Inter ; logo vectoriel officiel dans `public/brand/`
+et composant animé `src/components/Logo.tsx`.
+
 ## Avant publication
 
-- Remplacer le logo typographique provisoire (`Wordmark`) par le logo
-  officiel (`public/brand/logo.svg`, prop `logoSrc`).
-- Faire valider les chiffres (17 campus, 95 % d'insertion) par l'école.
-- Si possible, remplacer Montserrat/Inter par la typographie officielle.
+- Faire valider par l'école les chiffres utilisés (17 campus, 20 formations
+  certifiées, +1800 entreprises partenaires, 82 % d'insertion après un MBA)
+  et la formulation « payé·e pendant ta formation / études financées ».

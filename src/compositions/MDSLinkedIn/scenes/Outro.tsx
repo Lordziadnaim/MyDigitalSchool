@@ -1,67 +1,103 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
-import { Background } from "../../../components/Background";
-import { Wordmark } from "../../../components/Wordmark";
+import { Logo } from "../../../components/Logo";
 import { colors, radii } from "../../../brand/theme";
 import { displayFont, textFont } from "../../../brand/fonts";
 import { fadeInOut, pop, progress } from "../../../lib/animation";
-import { CAMPUSES } from "../campuses";
 
-/** End card — logo, tagline, call to action. No voiceover; music resolves. */
+const ACTIONS = ["Brochure", "Portes ouvertes", "Candidature"];
+
+/**
+ * End card — light layout like the school website: colour logo, tagline,
+ * purple call to action and the site's three actions.
+ */
 export const Outro: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
-  const out = fadeInOut(frame, 0, durationInFrames, 20);
-  const cta = pop(frame, fps, 30, 14);
+  const out = fadeInOut(frame, -100, durationInFrames, 20);
+  const cta = pop(frame, fps, 34, 14);
 
   return (
-    <AbsoluteFill style={{ opacity: out }}>
-      <Background glow={1} />
+    <AbsoluteFill
+      style={{
+        background: `linear-gradient(180deg, ${colors.white} 0%, ${colors.blueLight} 100%)`,
+      }}
+    >
       <AbsoluteFill
-        style={{ alignItems: "center", justifyContent: "center", gap: 46 }}
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 40,
+          opacity: out,
+        }}
       >
-        <Wordmark size={130} progress={progress(frame, 0, 26)} />
+        <Logo width={640} variant="color" progress={progress(frame, 0, 36)} />
         <div
           style={{
             fontFamily: displayFont,
             fontWeight: 800,
             fontSize: 72,
-            color: colors.white,
-            opacity: progress(frame, 14, 16),
+            color: colors.greyDark,
+            opacity: progress(frame, 18, 16),
+            translate: `0px ${(1 - progress(frame, 18, 16)) * 20}px`,
           }}
         >
           Ton talent existe déjà.{" "}
-          <span style={{ color: colors.blue }}>Donne-lui un métier.</span>
+          <span style={{ color: colors.purple }}>Donne-lui un métier.</span>
         </div>
         <div
           style={{
-            padding: "26px 56px",
+            padding: "24px 56px",
             borderRadius: radii.pill,
-            backgroundColor: colors.blue,
-            color: colors.ink,
+            backgroundColor: colors.purple,
+            color: colors.white,
             fontFamily: textFont,
             fontWeight: 700,
-            fontSize: 48,
+            fontSize: 44,
             opacity: cta,
             scale: String(0.8 + 0.2 * cta),
-            boxShadow: `0 0 ${40 + 20 * Math.sin(frame * 0.12)}px ${colors.blue}88`,
           }}
         >
-          Découvre les formations → mydigitalschool.com
+          Découvre les 20 formations → mydigitalschool.com
+        </div>
+        <div style={{ display: "flex", gap: 20 }}>
+          {ACTIONS.map((a, i) => {
+            const p = pop(frame, fps, 50 + i * 6, 16);
+            return (
+              <div
+                key={a}
+                style={{
+                  padding: "12px 30px",
+                  borderRadius: radii.pill,
+                  border: `2px solid ${colors.purple}`,
+                  color: colors.purple,
+                  fontFamily: textFont,
+                  fontWeight: 700,
+                  fontSize: 30,
+                  opacity: p,
+                  translate: `0px ${(1 - p) * 20}px`,
+                }}
+              >
+                {a}
+              </div>
+            );
+          })}
         </div>
         <div
           style={{
-            marginTop: 30,
-            maxWidth: 1500,
-            textAlign: "center",
+            marginTop: 10,
+            padding: "8px 18px",
+            backgroundColor: colors.pink,
+            color: colors.white,
             fontFamily: textFont,
-            fontSize: 28,
-            lineHeight: 1.6,
-            color: colors.grey,
-            opacity: progress(frame, 50, 20),
+            fontWeight: 700,
+            fontSize: 26,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            opacity: progress(frame, 70, 14),
           }}
         >
-          {CAMPUSES.map((c) => c.name).join(" · ")}
+          Ici, les talents se connectent
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

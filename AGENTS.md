@@ -38,7 +38,7 @@ src/
   lib/animation.ts         progress, fadeInOut, pop, softSpring, stagger, float…
   components/              reusable: Background, AnimatedText, Captions,
                            Counter, Card, Shapes (Ring, GrowLine, DrawPath, Dot),
-                           Icons, Wordmark
+                           Icons, Logo (official logo, animated)
   compositions/
     Sample/                toolkit demo (1920×1080, 30 fps, duration prop)
     MDSLinkedIn/           the 3-min LinkedIn film
@@ -50,7 +50,8 @@ src/
 public/
   voiceover/sN.mp3         ElevenLabs v4 takes (loudness-normalized); raw/ = originals
   music/bed.mp3            ElevenLabs Music bed; raw/ = original
-  fonts/                   Montserrat + Inter woff2
+  brand/                   official logo: logo.svg (colour), logo-white.svg
+  fonts/                   Bricolage Grotesque + Inter woff2 (same as the website)
 scripts/
   sync-voiceover.mjs       ffprobe + silence detection → caption timings
   new-composition.mjs      scaffolds + registers a composition
@@ -105,15 +106,28 @@ scripts/
 
 ## Brand (DA MyDigitalSchool)
 
-- Colors (`brand/theme.ts`): blue `#2DB8C5`, ink `#14071A`, white. Grey
-  tones are only for the "routine / before" mood.
-- Principle from the school: black = IT expertise, blue = freedom to create.
-- `Wordmark` is a **typographic placeholder**, not the official logo. Put
-  the official SVG in `public/brand/logo.svg` and pass
-  `logoSrc={staticFile("brand/logo.svg")}`.
-- Tone: tutoiement, warm, concrete, never pushy. Facts used in the film
-  (17 campus, Bachelors/MBA, initial or alternance, 95 % insertion) must be
-  re-validated with the school before publishing.
+- Source: official homepage (PDF print, oct. 2026) + official logo.
+- Colors (`brand/theme.ts`): purple `#662483` (blocks, buttons), turquoise
+  `#2DB8C5` (logo right brain, "DIGITAL", highlights), pink `#E71D73` (tags),
+  light cyan `#E0F5F7` (light sections), dark grey `#3C3C3B` (logo left
+  brain, text). Video backgrounds use a deep purple (`colors.ink`). Grey
+  desaturation is only for the "routine / before" mood.
+- Typography: Bricolage Grotesque ExtraBold for titles, Inter for text —
+  the same pairing as mydigitalschool.com.
+- Logo: `<Logo width={600} progress={0→1} variant="white" | "color" />`
+  (`components/Logo.tsx`). It is drawn from the official vector paths
+  (`brand/logo-paths.ts`, also `public/brand/logo*.svg`); the two brain
+  halves slide in, then the lettering is revealed. Use `white` on purple,
+  `color` on white / light cyan. Never redraw or recolour the logo.
+- Pink section tags = `Kicker` (`MDSLinkedIn/parts.tsx`), like the site's
+  "TITRE RNCP" tags.
+- Tone: tutoiement, warm, concrete, never pushy. Site taglines: « L'école des
+  métiers du digital », « Ici, les talents se connectent », « Révèle ton
+  potentiel dans les métiers du digital ».
+- Official figures (homepage, oct. 2026): 17 campus, 20 formations du BTS au
+  MBA certifiées par l'État (RNCP), +1800 entreprises partenaires (étude
+  interne 2025), 82 % de taux d'insertion après un MBA (enquête France
+  Compétences, promotion 2024), 5 000 alumni en poste. Don't invent others.
 
 ## Audio & sync
 

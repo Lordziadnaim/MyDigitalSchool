@@ -16,7 +16,7 @@ import { Background } from "../../components/Background";
 import { AnimatedText } from "../../components/AnimatedText";
 import { Ring, GrowLine, Dot } from "../../components/Shapes";
 import { Counter } from "../../components/Counter";
-import { Wordmark } from "../../components/Wordmark";
+import { Logo } from "../../components/Logo";
 import { colors } from "../../brand/theme";
 import { VIDEO } from "../../config/video";
 import { textFont } from "../../brand/fonts";
@@ -170,7 +170,7 @@ const SceneOutro: React.FC = () => {
         style={{ alignItems: "center", justifyContent: "center", gap: 40 }}
       >
         <Counter to={30} start={4} duration={30} suffix=" fps" fontSize={150} />
-        <Wordmark size={90} progress={progress(frame, 20, 30)} />
+        <Logo width={420} progress={progress(frame, 20, 30)} />
       </AbsoluteFill>
     </>
   );

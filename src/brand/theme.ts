@@ -1,29 +1,37 @@
 /**
  * MyDigitalSchool art direction (DA) tokens.
  *
- * Sources:
- * - Brand colors published for mydigitalschool.com (Brandfetch):
- *   Scooter blue #2DB8C5, Haiti #14071A, white #FFFFFF.
- * - Logo principle stated by the school: "le noir de l'expertise
- *   informatique s'associe au bleu de la liberté de créer et d'entreprendre".
+ * Sampled from the official homepage (mydigitalschool.com, oct. 2026) and
+ * the official logo:
+ * - Purple #662483 — hero blocks, buttons, links.
+ * - Turquoise #2DB8C5 — right half of the logo brain, "DIGITAL", bands.
+ * - Pink #E71D73 — tags ("TITRE RNCP", "DEV & CODE"), ratings.
+ * - Light cyan #E0F5F7 — light sections.
+ * - Dark grey #3C3C3B — left half of the logo brain, text, footer.
  *
- * The tints below are derived from those three colors. If the school
- * provides an official brand book, update the values here: every
- * component reads from this file.
+ * Every component reads from this file.
  */
 export const colors = {
-  /** Primary brand blue ("le bleu de la liberté de créer"). */
+  /** Brand purple. */
+  purple: "#662483",
+  purpleLight: "#8E4BAE",
+  /** Brand turquoise ("DIGITAL" + right brain). Kept as `blue` for brevity. */
   blue: "#2DB8C5",
-  blueLight: "#7FD6DE",
-  blueDeep: "#1A8C97",
-  /** Brand near-black ("le noir de l'expertise"). */
-  ink: "#14071A",
-  inkSoft: "#22142A",
-  inkLine: "#3A2C42",
+  blueDeep: "#1F8F99",
+  /** Light cyan section background. */
+  blueLight: "#E0F5F7",
+  /** Brand pink used for tags. */
+  pink: "#E71D73",
+  /** Logo dark grey. */
+  greyDark: "#3C3C3B",
+  /** Video background: very deep version of the brand purple. */
+  ink: "#24102F",
+  inkSoft: "#351747",
+  inkLine: "#55306A",
   white: "#FFFFFF",
   /** Neutral used for the "grey routine" part of the story. */
-  grey: "#8A8190",
-  greyLight: "#C9C4CC",
+  grey: "#8C8A8F",
+  greyLight: "#CFCCD2",
 } as const;
 
 export const radii = {

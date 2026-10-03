@@ -192,7 +192,7 @@ export const DayCard: React.FC<{
   </div>
 );
 
-/** Section label in small caps, e.g. "Chapitre 1". */
+/** Section tag, styled like the pink tags of the school website. */
 export const Kicker: React.FC<{
   readonly text: string;
   readonly start?: number;
@@ -203,14 +203,18 @@ export const Kicker: React.FC<{
   return (
     <div
       style={{
+        alignSelf: "flex-start",
+        padding: "8px 16px",
+        backgroundColor: colors.pink,
         fontFamily: textFont,
-        fontWeight: 600,
-        fontSize: 28,
-        letterSpacing: "0.3em",
+        fontWeight: 700,
+        fontSize: 26,
+        letterSpacing: "0.08em",
         textTransform: "uppercase",
-        color: colors.blue,
+        color: colors.white,
         opacity: p,
         translate: `0px ${(1 - p) * 16}px`,
+        clipPath: `inset(0 ${(1 - p) * 100}% 0 0)`,
         ...style,
       }}
     >

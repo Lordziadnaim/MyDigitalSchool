@@ -52,7 +52,7 @@ export const S3Talents: React.FC = () => {
           paddingTop: mapRange(titleUp, [0, 1], [330, 110]),
         }}
       >
-        <Kicker text="Le soir" start={cLook} />
+        <Kicker text="Le soir" start={cLook} style={{ alignSelf: "center" }} />
         <AnimatedText
           text="Quand personne ne te demande rien…"
           start={cNobody - 6}

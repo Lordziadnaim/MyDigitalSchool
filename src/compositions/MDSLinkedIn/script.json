@@ -109,16 +109,19 @@
       "id": "s7",
       "name": "MyDigitalSchool",
       "audio": "voiceover/s7.mp3",
-      "tts": "C'est exactement ce que propose My Digital School. L'école des métiers du digital. Dix-sept campus en France. Des Bachelors et des MBA, en initial ou en alternance. Développement web, webdesign, marketing digital, data, création numérique. Et quatre-vingt-quinze pour cent d'insertion professionnelle.",
+      "tts": "C'est exactement ce que propose My Digital School. L'école des métiers du digital. Dix-sept campus en France. Vingt formations, du BTS au MBA, toutes certifiées par l'État, en initial ou en alternance. Marketing digital, design et création web, informatique et développement. Plus de mille huit cents entreprises partenaires qui recrutent ses alternants. [warmly] Et quatre-vingt-deux pour cent de taux d'insertion après un MBA.",
       "captions": [
         "C'est exactement ce que propose MyDigitalSchool.",
         "L'école des métiers du digital.",
         "17 campus en France.",
-        "Des Bachelors et des MBA, en initial ou en alternance.",
-        "Développement web, webdesign, marketing digital,",
-        "data, création numérique.",
-        "Et 95 % d'insertion professionnelle."
-      ]
+        "20 formations, du BTS au MBA,",
+        "toutes certifiées par l'État, en initial ou en alternance.",
+        "Marketing digital, design et création web,",
+        "informatique et développement.",
+        "Plus de 1 800 entreprises partenaires qui recrutent ses alternants.",
+        "Et 82 % de taux d'insertion après un MBA."
+      ],
+      "sources": "Home page mydigitalschool.com (oct. 2026) : 17 campus, 20 formations certifiées par l'État, +1800 entreprises partenaires (étude interne 2025), 82 % d'insertion après un MBA (enquête France Compétences, promotion 2024)."
     },
     {
       "id": "s8",

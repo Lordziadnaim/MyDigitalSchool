@@ -56,7 +56,7 @@ export const Captions: React.FC<Props> = ({
           maxWidth: 1400,
           padding: "14px 28px",
           borderRadius: radii.md,
-          backgroundColor: "rgba(20, 7, 26, 0.72)",
+          backgroundColor: "rgba(36, 16, 47, 0.8)",
           border: `1px solid ${colors.inkLine}`,
           color: colors.white,
           fontFamily: textFont,

@@ -16,7 +16,7 @@ export const TRANSITION_FRAMES = 20;
 
 const LEAD_SECONDS: Record<string, number> = { s1: 1.0 };
 const DEFAULT_LEAD = 0.6;
-const TAIL_SECONDS = 3.2;
+const TAIL_SECONDS = 2.8;
 
 export type SceneId = "s1" | "s2" | "s3" | "s4" | "s5" | "s6" | "s7" | "s8";
 

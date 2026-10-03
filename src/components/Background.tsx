@@ -39,8 +39,9 @@ export const Background: React.FC<Props> = ({
       <AbsoluteFill
         style={{
           opacity: glow,
-          background: `radial-gradient(circle at ${30 + dx / 20}% ${35 + dy / 20}%, ${colors.blue}55 0%, transparent 45%),
-            radial-gradient(circle at ${78 - dx / 25}% ${75 - dy / 25}%, ${colors.blueDeep}44 0%, transparent 40%)`,
+          background: `radial-gradient(circle at ${30 + dx / 20}% ${35 + dy / 20}%, ${colors.purple}cc 0%, transparent 50%),
+            radial-gradient(circle at ${78 - dx / 25}% ${75 - dy / 25}%, ${colors.blue}55 0%, transparent 42%),
+            radial-gradient(circle at ${88 + dx / 30}% ${12 + dy / 30}%, ${colors.pink}22 0%, transparent 30%)`,
         }}
       />
       {grid ? (

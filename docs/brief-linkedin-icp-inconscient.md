@@ -34,7 +34,7 @@ Conséquences pour le message :
    (montage, typo, réseaux, code) est une compétence, et ce sont des métiers.
 4. **Lever la croyance limitante** (« trop tard », « un luxe », « un risque »).
 5. **Présenter la solution générique** (alternance : payé·e, études
-   financées, expérience) **puis seulement la marque** (à 2:10 sur 3:00).
+   financées, expérience) **puis seulement la marque** (à 2:07 sur 3:00).
 6. **Appel à l'action doux** : une question à se poser, puis la découverte
    des formations. Pas de pression commerciale.
 
@@ -44,13 +44,13 @@ Conséquences pour le message :
 | - | --- | --- | --- |
 | 1 | Le réveil | Accroche, identification | 0:00 |
 | 2 | Pilote automatique | Le problème non dit | 0:16 |
-| 3 | Ce que tu fais déjà | Les talents cachés | 0:40 |
-| 4 | Le déclic | Recadrage : ce sont des métiers | 1:05 |
-| 5 | La croyance | « Trop tard ? » → et si c'était l'inverse | 1:26 |
-| 6 | Le virage | L'alternance comme solution | 1:47 |
-| 7 | MyDigitalSchool | Révélation de la marque, preuves | 2:10 |
-| 8 | La question | Bouclage + promesse | 2:32 |
-| — | Outro | Logo, signature, CTA | 2:50 |
+| 3 | Ce que tu fais déjà | Les talents cachés | 0:39 |
+| 4 | Le déclic | Recadrage : ce sont des métiers | 1:03 |
+| 5 | La croyance | « Trop tard ? » → et si c'était l'inverse | 1:24 |
+| 6 | Le virage | L'alternance comme solution | 1:45 |
+| 7 | MyDigitalSchool | Révélation de la marque, preuves | 2:07 |
+| 8 | La question | Bouclage + promesse | 2:35 |
+| — | Outro | Logo, signature, CTA | 2:53 |
 
 ## Voix
 
@@ -105,10 +105,11 @@ dimanche soir… qui disparaît.
 
 **7 — MyDigitalSchool**
 C'est exactement ce que propose MyDigitalSchool. L'école des métiers du
-digital. Dix-sept campus en France. Des Bachelors et des MBA, en initial ou
-en alternance. Développement web, webdesign, marketing digital, data,
-création numérique. Et quatre-vingt-quinze pour cent d'insertion
-professionnelle.
+digital. Dix-sept campus en France. Vingt formations, du BTS au MBA, toutes
+certifiées par l'État, en initial ou en alternance. Marketing digital,
+design et création web, informatique et développement. Plus de mille huit
+cents entreprises partenaires qui recrutent ses alternants. Et
+quatre-vingt-deux pour cent de taux d'insertion après un MBA.
 
 **8 — La question**
 Alors demain matin, quand ton réveil sonnera… et que ton pouce ira chercher
@@ -118,27 +119,29 @@ talent existe déjà. Donne-lui un métier.
 
 ## Direction artistique
 
-- Couleurs de la marque : bleu `#2DB8C5`, quasi-noir `#14071A`, blanc
-  (principe de l'école : « le noir de l'expertise informatique, le bleu de
-  la liberté de créer »).
-- Récit chromatique : scènes 1-2 en gris désaturé (la routine), retour
-  progressif du bleu à la scène 3 (les talents), pleine couleur à partir du
-  déclic.
-- Typo : Montserrat (titres) + Inter (sous-titres) — à remplacer par la
-  typographie officielle si disponible.
+Source : home page officielle (impression PDF, oct. 2026) et logo officiel.
+
+- Couleurs : violet `#662483`, turquoise `#2DB8C5`, rose `#E71D73` (tags),
+  cyan clair `#E0F5F7`, gris `#3C3C3B`.
+- Typo : Bricolage Grotesque ExtraBold (titres) + Inter (textes), comme le site.
+- Logo officiel animé : les deux moitiés du cerveau (gris = expertise,
+  turquoise = créativité) se rejoignent, puis le lettrage apparaît.
+- Récit chromatique : scènes 1-2 désaturées en gris (la routine), retour
+  progressif du violet et du turquoise à la scène 3 (les talents), pleine
+  couleur ensuite ; l'outro passe en blanc / cyan clair comme le site.
+- Tags roses façon « TITRE RNCP » pour les intertitres.
 - Sous-titres incrustés : sur LinkedIn la majorité des vidéos sont lues sans
   le son.
 
 ## Points à valider avant publication
 
-- Chiffres : 17 campus, 95 % d'insertion, Bachelors / MBA en initial ou en
-  alternance (sources : site mydigitalschool.com et fiches campus — à
-  confirmer avec l'école, notamment la définition et l'année du taux
-  d'insertion).
+- Chiffres repris de la home page : 17 campus ; 20 formations du BTS au MBA,
+  certifiées par l'État ; +1800 entreprises partenaires (étude interne 2025) ;
+  82 % de taux d'insertion après un MBA (enquête France Compétences,
+  promotion 2024). À faire confirmer par la communication de l'école.
 - « Payé·e pendant ta formation / études financées » : vrai pour les
   contrats d'apprentissage et de professionnalisation ; vérifier la
-  formulation avec le service juridique / communication.
-- Logo officiel à intégrer (le wordmark actuel est un placeholder).
+  formulation avec l'école.
 
 ## Proposition de texte de post LinkedIn
 

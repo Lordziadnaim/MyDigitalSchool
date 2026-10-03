@@ -46,7 +46,7 @@ export const Counter: React.FC<Props> = ({
       }}
     >
       {prefix}
-      {value}
+      {value.toLocaleString("fr-FR")}
       {suffix}
     </div>
   );

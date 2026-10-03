@@ -6,7 +6,7 @@ import { getScene } from "../timeline";
 import { colors } from "../../../brand/theme";
 import { displayFont } from "../../../brand/fonts";
 import { AnimatedText } from "../../../components/AnimatedText";
-import { Wordmark } from "../../../components/Wordmark";
+import { Logo } from "../../../components/Logo";
 import { fadeInOut, mapRange, pop, progress } from "../../../lib/animation";
 
 /** Scene 8 — callback to the alarm, the question, the tagline. */
@@ -126,7 +126,7 @@ export const S8Question: React.FC = () => {
           opacity: partC,
         }}
       >
-        <Wordmark size={120} progress={progress(frame, cMDS, 26)} />
+        <Logo width={560} progress={progress(frame, cMDS, 34)} />
         <AnimatedText
           text="Ton talent existe déjà."
           start={cTagline}
