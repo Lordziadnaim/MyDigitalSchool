@@ -15,6 +15,7 @@ right sub-guide (markup, transitions, audio, captions, render…).
 | Install | `npm i` |
 | Open Remotion Studio (preview) | `npm run dev` → http://localhost:3000 |
 | Render the V2 film (62 s, 60 fps) | `npm run render` → `out/MDS-Hook60.mp4` |
+| Render the V3 Lille 3D film (56 s, 4:5, 60 fps) | `npm run render:lille` → `out/MDS-Lille.mp4` (+ `render:lille15` for the 15 s cut) |
 | Render the V1 film (3 min, 30 fps) | `npm run render:v1` → `out/MDS-LinkedIn.mp4` |
 | Render the sample | `npm run render:sample` → `out/sample.mp4` |
 | Render any composition | `npx remotion render <CompositionId> out/<name>.mp4` |
@@ -48,6 +49,14 @@ src/
                            ProgressBar, BigWord, useTime() (absolute seconds in any scene)
       HookFilm.tsx         assembly: scenes, voice clips, SFX, music re-cut + ducking
       scenes/              Hook, Montage, Drop, Solution, Brand (+ Stage, Phone)
+    MDSLille/              V3 — « Sauf une. » 3D one-shot film, campus de Lille, 1080×1350
+      edit.ts              voice lines (+ subtitle chunks), story BEATS, SFX — all in seconds
+      city.ts              procedural miniature Lille (houses, windows, Inès, campus, belfry, gare)
+      camera.ts            the single camera move: keys in seconds, monotone-cubic timing
+      world/               R3F scene: Atmosphere (sky/fog/lights), City (instanced houses,
+                           windows, halos, light threads), Landmarks, InesRoom (her room)
+      Overlay.tsx          location card, subtitles, phone notifications, end card
+      LilleFilm.tsx        FilmShot (3D + overlays from any start time), FilmAudio, 15 s cut
     MDSLinkedIn/           V1 — the 3-min storytelling film (30 fps)
       script.json          voiceover text + caption lines per scene (source of truth)
       voiceover.generated.json  durations + caption timings (generated)
@@ -166,6 +175,23 @@ V1:
   starts: use it to sync visuals to the voice.
 - Music is ducked automatically under the voice (`musicVolume` in
   `MainVideo.tsx`).
+
+## 3D (V3 / `@remotion/three`)
+
+- `<ThreeCanvas>` from `@remotion/three` with React Three Fiber; no Blender.
+  The world is a pure function of film time `t`, passed down as a prop.
+- Never use R3F's `useFrame`. Update cameras, instanced meshes and buffer
+  attributes in `useLayoutEffect` (it runs before ThreeCanvas renders the
+  frame; `useEffect` would lag one frame).
+- No GPU in the render container: renders use SwiftShader. Set
+  `REMOTION_GL=swangle` (read by `remotion.config.ts`; already in the
+  `render:lille*` scripts). `@react-three/postprocessing` (Bloom) renders
+  blank under SwiftShader — fake glow with additive sprites (`world/glow.ts`).
+- Canvas textures that draw text need the fonts first: `FilmShot` waits for
+  `document.fonts.load()` before mounting the canvas.
+- Voice for V3: "Kael – Professional Narrator" (`yG4Uc56cLYQyZFnWaYv2`,
+  `eleven_v4`), clips in `public/v3/voice/`. After replacing a clip, update
+  its `dur` (ffprobe) and caption offsets in `MDSLille/edit.ts`.
 
 ## Rendering
 

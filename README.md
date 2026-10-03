@@ -10,6 +10,10 @@ Contenu :
   1920×1080 à **60 fps**, hook dès la 1re seconde, montage nerveux calé sur la
   musique, voix française (accent parisien) ElevenLabs v4, sound design,
   sous-titres mot à mot. Stratégie : [`docs/v2-strategie-creative.md`](docs/v2-strategie-creative.md).
+- **`MDS-Lille` (V3, campus de Lille)** : « Sauf une. » — film 3D de 56 s en
+  un seul plan-séquence, **4:5 (1080×1350) à 60 fps**, pensé pour ne pas
+  ressembler à une publicité (marque uniquement en signature), + cut de
+  15 s `MDS-Lille-Cut15`. Stratégie : [`docs/v3-lille-sauf-une.md`](docs/v3-lille-sauf-une.md).
 - **`MDS-LinkedIn` (V1)** : version storytelling de 3 min (30 fps).
   Brief : [`docs/brief-linkedin-icp-inconscient.md`](docs/brief-linkedin-icp-inconscient.md).
 - **`Sample`** : composition de démonstration (texte animé, formes,
@@ -32,6 +36,8 @@ dossier `MDS-Scenes` dans la barre latérale.
 
 ```bash
 npm run render              # → out/MDS-Hook60.mp4 (V2, 62 s, 60 fps)
+npm run render:lille        # → out/MDS-Lille.mp4 (V3 3D, 56 s, 4:5, 60 fps)
+npm run render:lille15      # → out/MDS-Lille-Cut15.mp4 (cut 15 s)
 npm run render:v1           # → out/MDS-LinkedIn.mp4 (V1, 3:00, 30 fps)
 npm run render:sample       # → out/sample.mp4
 npx remotion render <Id> out/<fichier>.mp4      # n'importe quelle composition

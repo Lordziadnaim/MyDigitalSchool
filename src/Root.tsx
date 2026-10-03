@@ -4,6 +4,12 @@ import { LEGACY_FPS, VIDEO } from "./config/video";
 import { HookFilm } from "./compositions/MDSHook/HookFilm";
 import { TOTAL_SECONDS } from "./compositions/MDSHook/edit";
 import {
+  CUT_SECONDS,
+  LilleCut15,
+  LilleFilm,
+} from "./compositions/MDSLille/LilleFilm";
+import { TOTAL_SECONDS as LILLE_SECONDS } from "./compositions/MDSLille/edit";
+import {
   SampleComposition,
   calculateSampleMetadata,
 } from "./compositions/Sample/SampleComposition";
@@ -31,6 +37,24 @@ import { Outro } from "./compositions/MDSLinkedIn/scenes/Outro";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* V3 — « Sauf une. » — 3D film for the Lille campus, 4:5, 60 fps. */}
+      <Composition
+        id="MDS-Lille"
+        component={LilleFilm}
+        width={1080}
+        height={1350}
+        fps={VIDEO.fps}
+        durationInFrames={Math.round(LILLE_SECONDS * VIDEO.fps)}
+      />
+      <Composition
+        id="MDS-Lille-Cut15"
+        component={LilleCut15}
+        width={1080}
+        height={1350}
+        fps={VIDEO.fps}
+        durationInFrames={Math.round(CUT_SECONDS * VIDEO.fps)}
+      />
+
       {/* V2 — « Stop. Ne scrolle pas. » — 62 s hook-driven film, 60 fps. */}
       <Composition
         id="MDS-Hook60"

@@ -22,3 +22,12 @@ Config.setPixelFormat("yuv420p");
 if (process.env.REMOTION_BROWSER_EXECUTABLE) {
   Config.setBrowserExecutable(process.env.REMOTION_BROWSER_EXECUTABLE);
 }
+
+// 3D (WebGL) renderer. On a machine with a GPU the default ("angle") is
+// best. On a server without GPU use software rendering:
+// export REMOTION_GL=swangle
+if (process.env.REMOTION_GL) {
+  Config.setChromiumOpenGlRenderer(
+    process.env.REMOTION_GL as "swangle" | "angle" | "egl" | "swiftshader" | "vulkan",
+  );
+}

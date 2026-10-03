@@ -6,18 +6,22 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "9.8.1",
     "@remotion/cli": "4.0.532",
     "@remotion/fonts": "4.0.532",
     "@remotion/media": "4.0.532",
     "@remotion/paths": "4.0.532",
+    "@remotion/three": "4.0.532",
     "@remotion/transitions": "4.0.532",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.532"
+    "remotion": "4.0.532",
+    "three": "0.186.1"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.532",
     "@types/react": "19.2.7",
+    "@types/three": "0.186.0",
     "@types/web": "0.0.166",
     "eslint": "9.39.5",
     "prettier": "3.8.1",
@@ -29,6 +33,8 @@
     "render": "remotion render MDS-Hook60 out/MDS-Hook60.mp4",
     "render:v1": "remotion render MDS-LinkedIn out/MDS-LinkedIn.mp4",
     "render:sample": "remotion render Sample out/sample.mp4",
+    "render:lille": "REMOTION_GL=swangle remotion render MDS-Lille out/MDS-Lille.mp4",
+    "render:lille15": "REMOTION_GL=swangle remotion render MDS-Lille-Cut15 out/MDS-Lille-Cut15.mp4",
     "still": "remotion still MDS-Hook60 out/still.png --frame=300",
     "new": "node scripts/new-composition.mjs",
     "sync:voiceover": "node scripts/sync-voiceover.mjs",
