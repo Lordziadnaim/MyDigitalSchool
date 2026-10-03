@@ -1,0 +1,139 @@
+{
+  "title": "MyDigitalSchool — « Ton talent existe déjà »",
+  "channel": "LinkedIn",
+  "awareness": "Eugene Schwartz — niveau 1 : inconscient (unaware)",
+  "voice": {
+    "provider": "ElevenLabs",
+    "model": "eleven_v4",
+    "voiceName": "Pierre",
+    "voiceId": "sW4oAri1O4pOd4MpNWmn"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "name": "Le réveil",
+      "audio": "voiceover/s1.mp3",
+      "tts": "[softly] Lundi. Sept heures douze. Le réveil sonne… et ton pouce, lui, sait déjà quoi faire. Snooze. Scroll. Une story. Une vidéo. Puis une autre. [short pause] Tu ne le remarques même plus.",
+      "captions": [
+        "Lundi.",
+        "7h12.",
+        "Le réveil sonne…",
+        "et ton pouce, lui, sait déjà quoi faire.",
+        "Snooze. Scroll.",
+        "Une story. Une vidéo. Puis une autre.",
+        "Tu ne le remarques même plus."
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "Pilote automatique",
+      "audio": "voiceover/s2.mp3",
+      "tts": "Puis le métro. Le bureau… ou l'amphi. Des journées qui se ressemblent tellement qu'elles finissent par se confondre. Rien de grave, hein. [sighs] C'est juste… la vie d'adulte. C'est ce qu'on se dit tous. On coche les cases. On attend le vendredi. Et le dimanche soir, ce petit poids dans la poitrine revient. Sans prévenir.",
+      "captions": [
+        "Puis le métro. Le bureau… ou l'amphi.",
+        "Des journées qui se ressemblent tellement",
+        "qu'elles finissent par se confondre.",
+        "Rien de grave, hein.",
+        "C'est juste… la vie d'adulte.",
+        "C'est ce qu'on se dit tous.",
+        "On coche les cases. On attend le vendredi.",
+        "Et le dimanche soir, ce petit poids dans la poitrine revient.",
+        "Sans prévenir."
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Ce que tu fais déjà",
+      "audio": "voiceover/s3.mp3",
+      "tts": "[curious] Mais regarde un peu ce que tu fais, le soir, quand personne ne te demande rien. Tu montes une vidéo pour l'anniversaire d'un pote, avec les transitions pile sur le beat. Tu passes une heure à choisir la bonne police pour une simple invitation. Tu sais exactement pourquoi tel compte cartonne… et pourquoi tel autre fait un flop. Tu as même déjà ouvert le code d'une page web, juste pour voir comment c'était fait.",
+      "captions": [
+        "Mais regarde un peu ce que tu fais, le soir,",
+        "quand personne ne te demande rien.",
+        "Tu montes une vidéo pour l'anniversaire d'un pote,",
+        "avec les transitions pile sur le beat.",
+        "Tu passes une heure à choisir la bonne police pour une simple invitation.",
+        "Tu sais exactement pourquoi tel compte cartonne…",
+        "et pourquoi tel autre fait un flop.",
+        "Tu as même déjà ouvert le code d'une page web,",
+        "juste pour voir comment c'était fait."
+      ]
+    },
+    {
+      "id": "s4",
+      "name": "Le déclic",
+      "audio": "voiceover/s4.mp3",
+      "tts": "[warmly] Toi, tu appelles ça « traîner sur ton téléphone ». Le monde professionnel, lui, appelle ça autrement. Du montage. Du design. Du community management. De l'expérience utilisateur. Du développement. [short pause] Des métiers. De vrais métiers. Qui recrutent. Et qui ont besoin de profils comme le tien.",
+      "captions": [
+        "Toi, tu appelles ça « traîner sur ton téléphone ».",
+        "Le monde professionnel, lui, appelle ça autrement.",
+        "Du montage. Du design.",
+        "Du community management.",
+        "De l'expérience utilisateur. Du développement.",
+        "Des métiers. De vrais métiers.",
+        "Qui recrutent.",
+        "Et qui ont besoin de profils comme le tien."
+      ]
+    },
+    {
+      "id": "s5",
+      "name": "La croyance",
+      "audio": "voiceover/s5.mp3",
+      "tts": "[softly] Alors pourquoi personne ne te l'a dit ? Parce qu'on t'a appris qu'un métier, ça se choisit à dix-sept ans, sur un formulaire. Qu'après, c'est trop tard. Que changer de voie, c'est un luxe… ou un risque. [pause] Et si c'était l'inverse ? Si le vrai risque, c'était de passer encore dix ans à attendre le vendredi ?",
+      "captions": [
+        "Alors pourquoi personne ne te l'a dit ?",
+        "Parce qu'on t'a appris qu'un métier, ça se choisit à 17 ans,",
+        "sur un formulaire.",
+        "Qu'après, c'est trop tard.",
+        "Que changer de voie, c'est un luxe… ou un risque.",
+        "Et si c'était l'inverse ?",
+        "Si le vrai risque, c'était de passer encore 10 ans à attendre le vendredi ?"
+      ]
+    },
+    {
+      "id": "s6",
+      "name": "Le virage",
+      "audio": "voiceover/s6.mp3",
+      "tts": "Aujourd'hui, des milliers de jeunes font ce virage. Ils apprennent sur des projets concrets, aux côtés de professionnels du secteur. Ils alternent l'école et l'entreprise… et ils sont payés pendant qu'ils se forment. Des études financées. Une vraie expérience sur le CV. [warmly] Et ce petit poids du dimanche soir… qui disparaît.",
+      "captions": [
+        "Aujourd'hui, des milliers de jeunes font ce virage.",
+        "Ils apprennent sur des projets concrets,",
+        "aux côtés de professionnels du secteur.",
+        "Ils alternent l'école et l'entreprise…",
+        "et ils sont payés pendant qu'ils se forment.",
+        "Des études financées.",
+        "Une vraie expérience sur le CV.",
+        "Et ce petit poids du dimanche soir… qui disparaît."
+      ]
+    },
+    {
+      "id": "s7",
+      "name": "MyDigitalSchool",
+      "audio": "voiceover/s7.mp3",
+      "tts": "C'est exactement ce que propose My Digital School. L'école des métiers du digital. Dix-sept campus en France. Des Bachelors et des MBA, en initial ou en alternance. Développement web, webdesign, marketing digital, data, création numérique. Et quatre-vingt-quinze pour cent d'insertion professionnelle.",
+      "captions": [
+        "C'est exactement ce que propose MyDigitalSchool.",
+        "L'école des métiers du digital.",
+        "17 campus en France.",
+        "Des Bachelors et des MBA, en initial ou en alternance.",
+        "Développement web, webdesign, marketing digital,",
+        "data, création numérique.",
+        "Et 95 % d'insertion professionnelle."
+      ]
+    },
+    {
+      "id": "s8",
+      "name": "La question",
+      "audio": "voiceover/s8.mp3",
+      "tts": "[softly] Alors demain matin, quand ton réveil sonnera… et que ton pouce ira chercher ton téléphone… pose-toi juste une question. [pause] Et si ce que tu fais pour passer le temps… devenait ce que tu fais de ta vie ? [warmly] My Digital School. Ton talent existe déjà. Donne-lui un métier.",
+      "captions": [
+        "Alors demain matin, quand ton réveil sonnera…",
+        "et que ton pouce ira chercher ton téléphone…",
+        "pose-toi juste une question.",
+        "Et si ce que tu fais pour passer le temps…",
+        "devenait ce que tu fais de ta vie ?",
+        "MyDigitalSchool.",
+        "Ton talent existe déjà. Donne-lui un métier."
+      ]
+    }
+  ]
+}

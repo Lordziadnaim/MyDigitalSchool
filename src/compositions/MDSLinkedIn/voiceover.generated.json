@@ -1,0 +1,370 @@
+{
+  "scenes": [
+    {
+      "id": "s1",
+      "audio": "voiceover/s1.mp3",
+      "durationMs": 12591,
+      "captions": [
+        {
+          "text": "Lundi.",
+          "startMs": 0,
+          "endMs": 820
+        },
+        {
+          "text": "7h12.",
+          "startMs": 820,
+          "endMs": 2189
+        },
+        {
+          "text": "Le réveil sonne…",
+          "startMs": 2189,
+          "endMs": 3694
+        },
+        {
+          "text": "et ton pouce, lui, sait déjà quoi faire.",
+          "startMs": 3694,
+          "endMs": 6314
+        },
+        {
+          "text": "Snooze. Scroll.",
+          "startMs": 6314,
+          "endMs": 7299
+        },
+        {
+          "text": "Une story. Une vidéo. Puis une autre.",
+          "startMs": 7299,
+          "endMs": 10919
+        },
+        {
+          "text": "Tu ne le remarques même plus.",
+          "startMs": 10919,
+          "endMs": 12545
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "audio": "voiceover/s2.mp3",
+      "durationMs": 20428,
+      "captions": [
+        {
+          "text": "Puis le métro. Le bureau… ou l'amphi.",
+          "startMs": 0,
+          "endMs": 3474
+        },
+        {
+          "text": "Des journées qui se ressemblent tellement",
+          "startMs": 3474,
+          "endMs": 5513
+        },
+        {
+          "text": "qu'elles finissent par se confondre.",
+          "startMs": 5513,
+          "endMs": 7336
+        },
+        {
+          "text": "Rien de grave, hein.",
+          "startMs": 7336,
+          "endMs": 8675
+        },
+        {
+          "text": "C'est juste… la vie d'adulte.",
+          "startMs": 8675,
+          "endMs": 11218
+        },
+        {
+          "text": "C'est ce qu'on se dit tous.",
+          "startMs": 11218,
+          "endMs": 12669
+        },
+        {
+          "text": "On coche les cases. On attend le vendredi.",
+          "startMs": 12669,
+          "endMs": 15504
+        },
+        {
+          "text": "Et le dimanche soir, ce petit poids dans la poitrine revient.",
+          "startMs": 15504,
+          "endMs": 19244
+        },
+        {
+          "text": "Sans prévenir.",
+          "startMs": 19244,
+          "endMs": 20304
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "audio": "voiceover/s3.mp3",
+      "durationMs": 21629,
+      "captions": [
+        {
+          "text": "Mais regarde un peu ce que tu fais, le soir,",
+          "startMs": 0,
+          "endMs": 1959
+        },
+        {
+          "text": "quand personne ne te demande rien.",
+          "startMs": 1959,
+          "endMs": 4074
+        },
+        {
+          "text": "Tu montes une vidéo pour l'anniversaire d'un pote,",
+          "startMs": 4074,
+          "endMs": 6526
+        },
+        {
+          "text": "avec les transitions pile sur le beat.",
+          "startMs": 6526,
+          "endMs": 8740
+        },
+        {
+          "text": "Tu passes une heure à choisir la bonne police pour une simple invitation.",
+          "startMs": 8740,
+          "endMs": 12504
+        },
+        {
+          "text": "Tu sais exactement pourquoi tel compte cartonne…",
+          "startMs": 12504,
+          "endMs": 15473
+        },
+        {
+          "text": "et pourquoi tel autre fait un flop.",
+          "startMs": 15473,
+          "endMs": 17628
+        },
+        {
+          "text": "Tu as même déjà ouvert le code d'une page web,",
+          "startMs": 17628,
+          "endMs": 19830
+        },
+        {
+          "text": "juste pour voir comment c'était fait.",
+          "startMs": 19830,
+          "endMs": 21879
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "audio": "voiceover/s4.mp3",
+      "durationMs": 18207,
+      "captions": [
+        {
+          "text": "Toi, tu appelles ça « traîner sur ton téléphone ».",
+          "startMs": 0,
+          "endMs": 2871
+        },
+        {
+          "text": "Le monde professionnel, lui, appelle ça autrement.",
+          "startMs": 2871,
+          "endMs": 5697
+        },
+        {
+          "text": "Du montage. Du design.",
+          "startMs": 5697,
+          "endMs": 6794
+        },
+        {
+          "text": "Du community management.",
+          "startMs": 6794,
+          "endMs": 9373
+        },
+        {
+          "text": "De l'expérience utilisateur. Du développement.",
+          "startMs": 9373,
+          "endMs": 12404
+        },
+        {
+          "text": "Des métiers. De vrais métiers.",
+          "startMs": 12404,
+          "endMs": 15031
+        },
+        {
+          "text": "Qui recrutent.",
+          "startMs": 15031,
+          "endMs": 16054
+        },
+        {
+          "text": "Et qui ont besoin de profils comme le tien.",
+          "startMs": 16054,
+          "endMs": 18457
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "audio": "voiceover/s5.mp3",
+      "durationMs": 18286,
+      "captions": [
+        {
+          "text": "Alors pourquoi personne ne te l'a dit ?",
+          "startMs": 0,
+          "endMs": 2083
+        },
+        {
+          "text": "Parce qu'on t'a appris qu'un métier, ça se choisit à 17 ans,",
+          "startMs": 2083,
+          "endMs": 6591
+        },
+        {
+          "text": "sur un formulaire.",
+          "startMs": 6591,
+          "endMs": 7489
+        },
+        {
+          "text": "Qu'après, c'est trop tard.",
+          "startMs": 7489,
+          "endMs": 8535
+        },
+        {
+          "text": "Que changer de voie, c'est un luxe… ou un risque.",
+          "startMs": 8535,
+          "endMs": 12297
+        },
+        {
+          "text": "Et si c'était l'inverse ?",
+          "startMs": 12297,
+          "endMs": 14135
+        },
+        {
+          "text": "Si le vrai risque, c'était de passer encore 10 ans à attendre le vendredi ?",
+          "startMs": 14135,
+          "endMs": 18262
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "audio": "voiceover/s6.mp3",
+      "durationMs": 19069,
+      "captions": [
+        {
+          "text": "Aujourd'hui, des milliers de jeunes font ce virage.",
+          "startMs": 0,
+          "endMs": 2899
+        },
+        {
+          "text": "Ils apprennent sur des projets concrets,",
+          "startMs": 2899,
+          "endMs": 4808
+        },
+        {
+          "text": "aux côtés de professionnels du secteur.",
+          "startMs": 4808,
+          "endMs": 6940
+        },
+        {
+          "text": "Ils alternent l'école et l'entreprise…",
+          "startMs": 6940,
+          "endMs": 9516
+        },
+        {
+          "text": "et ils sont payés pendant qu'ils se forment.",
+          "startMs": 9516,
+          "endMs": 11807
+        },
+        {
+          "text": "Des études financées.",
+          "startMs": 11807,
+          "endMs": 13340
+        },
+        {
+          "text": "Une vraie expérience sur le CV.",
+          "startMs": 13340,
+          "endMs": 15539
+        },
+        {
+          "text": "Et ce petit poids du dimanche soir… qui disparaît.",
+          "startMs": 15539,
+          "endMs": 18953
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "audio": "voiceover/s7.mp3",
+      "durationMs": 19069,
+      "captions": [
+        {
+          "text": "C'est exactement ce que propose MyDigitalSchool.",
+          "startMs": 0,
+          "endMs": 3015
+        },
+        {
+          "text": "L'école des métiers du digital.",
+          "startMs": 3015,
+          "endMs": 5124
+        },
+        {
+          "text": "17 campus en France.",
+          "startMs": 5124,
+          "endMs": 6973
+        },
+        {
+          "text": "Des Bachelors et des MBA, en initial ou en alternance.",
+          "startMs": 6973,
+          "endMs": 10814
+        },
+        {
+          "text": "Développement web, webdesign, marketing digital,",
+          "startMs": 10814,
+          "endMs": 14844
+        },
+        {
+          "text": "data, création numérique.",
+          "startMs": 14844,
+          "endMs": 16134
+        },
+        {
+          "text": "Et 95 % d'insertion professionnelle.",
+          "startMs": 16134,
+          "endMs": 19319
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "audio": "voiceover/s8.mp3",
+      "durationMs": 15647,
+      "captions": [
+        {
+          "text": "Alors demain matin, quand ton réveil sonnera…",
+          "startMs": 0,
+          "endMs": 2778
+        },
+        {
+          "text": "et que ton pouce ira chercher ton téléphone…",
+          "startMs": 2778,
+          "endMs": 5423
+        },
+        {
+          "text": "pose-toi juste une question.",
+          "startMs": 5423,
+          "endMs": 7236
+        },
+        {
+          "text": "Et si ce que tu fais pour passer le temps…",
+          "startMs": 7236,
+          "endMs": 9544
+        },
+        {
+          "text": "devenait ce que tu fais de ta vie ?",
+          "startMs": 9544,
+          "endMs": 11376
+        },
+        {
+          "text": "MyDigitalSchool.",
+          "startMs": 11376,
+          "endMs": 12897
+        },
+        {
+          "text": "Ton talent existe déjà. Donne-lui un métier.",
+          "startMs": 12897,
+          "endMs": 15897
+        }
+      ]
+    }
+  ]
+}
