@@ -213,10 +213,11 @@ export const CUT_PIECES: readonly {
   readonly from: number;
   readonly to: number;
 }[] = [
-  { from: 3.25, to: 6.5 },
-  { from: 27.62, to: 32.75 },
+  { from: 3.3, to: 6.4 },
+  // Long enough to see the city light up after « elle n'est pas la seule ».
+  { from: 27.62, to: 33.4 },
   { from: 43.3, to: 47.35 },
-  { from: 48.3, to: 51.6 },
+  { from: 48.5, to: 51.4 },
 ];
 export const CUT_SECONDS = CUT_PIECES.reduce((s, p) => s + (p.to - p.from), 0);
 
