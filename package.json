@@ -26,11 +26,13 @@
   "scripts": {
     "dev": "remotion studio",
     "studio": "remotion studio",
-    "render": "remotion render MDS-LinkedIn out/MDS-LinkedIn.mp4",
+    "render": "remotion render MDS-Hook60 out/MDS-Hook60.mp4",
+    "render:v1": "remotion render MDS-LinkedIn out/MDS-LinkedIn.mp4",
     "render:sample": "remotion render Sample out/sample.mp4",
-    "still": "remotion still MDS-LinkedIn out/still.png --frame=300",
+    "still": "remotion still MDS-Hook60 out/still.png --frame=300",
     "new": "node scripts/new-composition.mjs",
     "sync:voiceover": "node scripts/sync-voiceover.mjs",
+    "sync:v2": "node scripts/sync-v2.mjs",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"

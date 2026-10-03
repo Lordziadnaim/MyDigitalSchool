@@ -6,10 +6,12 @@ pour être piloté par des agents IA (voir [`AGENTS.md`](AGENTS.md)).
 
 Contenu :
 
-- **`MDS-LinkedIn`** : film storytelling de 3 min (1920×1080, 30 fps) pour
-  LinkedIn, ciblant un ICP au niveau 1 de conscience d'Eugene Schwartz
-  (inconscient). Voix ElevenLabs v4, musique ElevenLabs Music, sous-titres
-  incrustés. Brief, ICP et script : [`docs/brief-linkedin-icp-inconscient.md`](docs/brief-linkedin-icp-inconscient.md).
+- **`MDS-Hook60` (V2, film principal)** : « Stop. Ne scrolle pas. » — 62 s,
+  1920×1080 à **60 fps**, hook dès la 1re seconde, montage nerveux calé sur la
+  musique, voix française (accent parisien) ElevenLabs v4, sound design,
+  sous-titres mot à mot. Stratégie : [`docs/v2-strategie-creative.md`](docs/v2-strategie-creative.md).
+- **`MDS-LinkedIn` (V1)** : version storytelling de 3 min (30 fps).
+  Brief : [`docs/brief-linkedin-icp-inconscient.md`](docs/brief-linkedin-icp-inconscient.md).
 - **`Sample`** : composition de démonstration (texte animé, formes,
   transitions) dont la durée se règle par la prop `durationInSeconds`.
 - Une boîte à outils réutilisable : charte (`src/brand`), utilitaires
@@ -29,7 +31,8 @@ dossier `MDS-Scenes` dans la barre latérale.
 ## Exporter en MP4
 
 ```bash
-npm run render              # → out/MDS-LinkedIn.mp4 (3:00, H.264 + AAC)
+npm run render              # → out/MDS-Hook60.mp4 (V2, 62 s, 60 fps)
+npm run render:v1           # → out/MDS-LinkedIn.mp4 (V1, 3:00, 30 fps)
 npm run render:sample       # → out/sample.mp4
 npx remotion render <Id> out/<fichier>.mp4      # n'importe quelle composition
 npx remotion render Sample out/sample-12s.mp4 --props='{"durationInSeconds":12}'
@@ -46,7 +49,8 @@ npm run dev                 # puis ouvrez "MonPromo" dans le Studio
 
 ## Modifier résolution / fps / durée
 
-- `src/config/video.ts` : `width`, `height`, `fps` pour toutes les compositions.
+- `src/config/video.ts` : `width`, `height`, `fps` (60 par défaut).
+- `src/compositions/MDSHook/edit.ts` : durée (`TOTAL_SECONDS`), placement de chaque réplique, coupes, effets sonores.
 - `src/compositions/MDSLinkedIn/timeline.ts` : `TARGET_SECONDS` (durée totale du film).
 - Prop `durationInSeconds` de `Sample`.
 

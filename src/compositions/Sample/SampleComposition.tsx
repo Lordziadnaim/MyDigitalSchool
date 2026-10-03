@@ -18,7 +18,7 @@ import { Ring, GrowLine, Dot } from "../../components/Shapes";
 import { Counter } from "../../components/Counter";
 import { Logo } from "../../components/Logo";
 import { colors } from "../../brand/theme";
-import { VIDEO } from "../../config/video";
+import { LEGACY_FPS } from "../../config/video";
 import { textFont } from "../../brand/fonts";
 import { float, pop, progress, softSpring } from "../../lib/animation";
 
@@ -50,7 +50,7 @@ export const calculateSampleMetadata: CalculateMetadataFunction<
   return {
     durationInFrames: Math.max(
       60,
-      Math.round(props.durationInSeconds * VIDEO.fps),
+      Math.round(props.durationInSeconds * LEGACY_FPS),
     ),
   };
 };

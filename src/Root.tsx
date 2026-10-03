@@ -1,6 +1,8 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
-import { VIDEO } from "./config/video";
+import { LEGACY_FPS, VIDEO } from "./config/video";
+import { HookFilm } from "./compositions/MDSHook/HookFilm";
+import { TOTAL_SECONDS } from "./compositions/MDSHook/edit";
 import {
   SampleComposition,
   calculateSampleMetadata,
@@ -23,19 +25,30 @@ import { Outro } from "./compositions/MDSLinkedIn/scenes/Outro";
 
 /**
  * Every renderable video is registered here.
- * Resolution and fps come from src/config/video.ts.
+ * Resolution and fps come from src/config/video.ts (60 fps for new work;
+ * the V1 film and the Sample stay at 30 fps).
  */
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* V2 — « Stop. Ne scrolle pas. » — 62 s hook-driven film, 60 fps. */}
+      <Composition
+        id="MDS-Hook60"
+        component={HookFilm}
+        width={VIDEO.width}
+        height={VIDEO.height}
+        fps={VIDEO.fps}
+        durationInFrames={Math.round(TOTAL_SECONDS * VIDEO.fps)}
+      />
+
       {/* Demo of the toolkit — change durationInSeconds in the Studio props panel. */}
       <Composition
         id="Sample"
         component={SampleComposition}
         width={VIDEO.width}
         height={VIDEO.height}
-        fps={VIDEO.fps}
-        durationInFrames={VIDEO.fps * 8}
+        fps={LEGACY_FPS}
+        durationInFrames={LEGACY_FPS * 8}
         calculateMetadata={calculateSampleMetadata}
         defaultProps={{
           title: "Motion design avec Remotion",
@@ -44,13 +57,13 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
 
-      {/* MyDigitalSchool — LinkedIn storytelling film (≈ 3 min). */}
+      {/* V1 — LinkedIn storytelling film (3 min, 30 fps). */}
       <Composition
         id="MDS-LinkedIn"
         component={MainVideo}
         width={VIDEO.width}
         height={VIDEO.height}
-        fps={VIDEO.fps}
+        fps={LEGACY_FPS}
         durationInFrames={TOTAL_FRAMES}
       />
 
@@ -60,7 +73,7 @@ export const RemotionRoot: React.FC = () => {
           component={S1Reveil}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s1").duration}
         />
         <Composition
@@ -68,7 +81,7 @@ export const RemotionRoot: React.FC = () => {
           component={S2Routine}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s2").duration}
         />
         <Composition
@@ -76,7 +89,7 @@ export const RemotionRoot: React.FC = () => {
           component={S3Talents}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s3").duration}
         />
         <Composition
@@ -84,7 +97,7 @@ export const RemotionRoot: React.FC = () => {
           component={S4Declic}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s4").duration}
         />
         <Composition
@@ -92,7 +105,7 @@ export const RemotionRoot: React.FC = () => {
           component={S5Croyance}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s5").duration}
         />
         <Composition
@@ -100,7 +113,7 @@ export const RemotionRoot: React.FC = () => {
           component={S6Virage}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s6").duration}
         />
         <Composition
@@ -108,7 +121,7 @@ export const RemotionRoot: React.FC = () => {
           component={S7Ecole}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s7").duration}
         />
         <Composition
@@ -116,7 +129,7 @@ export const RemotionRoot: React.FC = () => {
           component={S8Question}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={getScene("s8").duration}
         />
         <Composition
@@ -124,7 +137,7 @@ export const RemotionRoot: React.FC = () => {
           component={Outro}
           width={VIDEO.width}
           height={VIDEO.height}
-          fps={VIDEO.fps}
+          fps={LEGACY_FPS}
           durationInFrames={OUTRO_FRAMES}
         />
       </Folder>

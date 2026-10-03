@@ -1,5 +1,5 @@
 import voiceover from "./voiceover.generated.json";
-import { VIDEO } from "../../config/video";
+import { LEGACY_FPS } from "../../config/video";
 import type { CaptionLine } from "../../components/Captions";
 
 /**
@@ -10,7 +10,7 @@ import type { CaptionLine } from "../../components/Captions";
  * `npm run sync:voiceover` after changing an audio file), so the video
  * re-times itself automatically.
  */
-export const FPS = VIDEO.fps;
+export const FPS = LEGACY_FPS;
 export const TARGET_SECONDS = 180;
 export const TRANSITION_FRAMES = 20;
 
