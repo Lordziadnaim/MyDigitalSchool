@@ -149,15 +149,17 @@ export const BEATS = {
   fadeOut: 55.2,
 } as const;
 
-/** Sound design, film seconds. */
+/**
+ * Sound design, film seconds. No continuous night ambience: the generated
+ * one was mostly low-frequency hum and read as a ventilation noise.
+ * dawn.mp3 is high-passed (300 Hz) for the same reason.
+ */
 export const SFX: readonly {
-  readonly file: "night" | "dawn" | "typing" | "swoosh" | "chime";
+  readonly file: "dawn" | "typing" | "swoosh" | "chime";
   readonly at: number;
   readonly volume: number;
   readonly dur?: number;
 }[] = [
-  { file: "night", at: 0, volume: 0.55, dur: 20 },
-  { file: "night", at: 19.5, volume: 0.55, dur: 20 },
   { file: "chime", at: 5.6, volume: 0.5 },
   { file: "swoosh", at: 8.6, volume: 0.5 },
   { file: "typing", at: 11.0, volume: 0.35, dur: 8 },
@@ -165,5 +167,5 @@ export const SFX: readonly {
   { file: "chime", at: 31.7, volume: 0.35 },
   { file: "chime", at: 32.5, volume: 0.25 },
   { file: "chime", at: 33.3, volume: 0.2 },
-  { file: "dawn", at: 38.5, volume: 0.6, dur: 12 },
+  { file: "dawn", at: 38.5, volume: 0.5, dur: 12 },
 ];

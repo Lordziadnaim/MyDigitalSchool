@@ -54,6 +54,28 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO.fps}
         durationInFrames={Math.round(CUT_SECONDS * VIDEO.fps)}
       />
+      {/* Audio-only twins: re-mix the soundtrack in seconds, then mux it
+          onto an existing render (see AGENTS.md › 3D). */}
+      <Folder name="MDS-Lille-Audio">
+        <Composition
+          id="MDS-Lille-Audio"
+          component={LilleFilm}
+          width={1080}
+          height={1350}
+          fps={VIDEO.fps}
+          durationInFrames={Math.round(LILLE_SECONDS * VIDEO.fps)}
+          defaultProps={{ audioOnly: true }}
+        />
+        <Composition
+          id="MDS-Lille-Cut15-Audio"
+          component={LilleCut15}
+          width={1080}
+          height={1350}
+          fps={VIDEO.fps}
+          durationInFrames={Math.round(CUT_SECONDS * VIDEO.fps)}
+          defaultProps={{ audioOnly: true }}
+        />
+      </Folder>
 
       {/* V2 — « Stop. Ne scrolle pas. » — 62 s hook-driven film, 60 fps. */}
       <Composition

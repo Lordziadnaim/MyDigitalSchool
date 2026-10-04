@@ -192,6 +192,14 @@ V1:
 - Voice for V3: "Kael – Professional Narrator" (`yG4Uc56cLYQyZFnWaYv2`,
   `eleven_v4`), clips in `public/v3/voice/`. After replacing a clip, update
   its `dur` (ffprobe) and caption offsets in `MDSLille/edit.ts`.
+- Audio fixes without re-rendering the 3D: render the audio-only twin
+  (`npx remotion render MDS-Lille-Audio out/audio.mp4`, ~1 min; same for
+  `MDS-Lille-Cut15-Audio`) and mux it onto the existing video
+  (`ffmpeg -i out/MDS-Lille.mp4 -i out/audio.mp4 -map 0:v -map 1:a -c:v copy -c:a aac out/new.mp4`).
+- Normalize V3 audio with a **linear gain** (two-pass loudnorm measurement,
+  then `volume=`; `alimiter` for voice peaks). Never single-pass `loudnorm`
+  on music or ambiences: its dynamic mode lifted the near-silent intro of
+  the score by +32 dB and made the room tone sound like a ventilation hum.
 
 ## Rendering
 

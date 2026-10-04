@@ -53,12 +53,14 @@ reproduit pas un lieu réel à l'identique.
 - Voix off **« Kael – Professional Narrator »** (ElevenLabs `eleven_v4`),
   française, grave et posée : un narrateur de film, pas un vendeur.
   Une prise par réplique (`public/v3/voice/n01…n09.mp3`, silences coupés,
-  normalisées à −16 LUFS ; originaux dans `raw/`).
+  normalisées à −16 LUFS par gain linéaire + limiteur ; originaux dans `raw/`).
 - Musique originale ElevenLabs Music v2.5 (56 s) : piano feutré → cordes →
   montée → résolution majeure à l'aube → piano seul
   (`public/v3/music/score.mp3`), baissée automatiquement sous la voix.
-- Ambiance ville la nuit, clavier, chimes cristallins à chaque fenêtre clé,
-  souffle de caméra, oiseaux et tram à l'aube (`public/v3/sfx/`).
+- Clavier, chimes cristallins à chaque fenêtre clé, souffle de caméra,
+  oiseaux et tram à l'aube (`public/v3/sfx/`). Pas d'ambiance continue la
+  nuit : celle générée n'était qu'un grondement grave (effet « ventilation »).
+- Normalisation par gain linéaire uniquement (voir AGENTS.md › 3D).
 - Sous-titres « film » (lecture sans le son, majoritaire sur LinkedIn).
 
 ## 5. DA

@@ -69,7 +69,7 @@ export const FilmShot: React.FC<{ readonly offset: number }> = ({ offset }) => {
   );
 };
 
-const MUSIC_GAIN = 0.75;
+const MUSIC_GAIN = 0.9;
 const DUCK = 0.55;
 
 /** 1 while the narrator speaks (smooth 0.2 s ramps). */
@@ -156,12 +156,7 @@ export const FilmAudio: React.FC<{
                     interpolate(lt, [dur - 1.5, dur], [1, 0], SOFT),
                   )
                 : 1;
-              // Night ambience fades out at dawn.
-              const dawn =
-                s.file === "night"
-                  ? interpolate(t, [37.5, 41], [1, 0], SOFT)
-                  : 1;
-              return s.volume * amb * dawn * edges(t);
+              return s.volume * amb * edges(t);
             }}
           />
         );
@@ -198,9 +193,14 @@ export const FilmAudio: React.FC<{
 };
 
 /** Main film: 56 s, one shot. */
-export const LilleFilm: React.FC = () => (
+type FilmProps = {
+  /** Skip the 3D (fast audio-only renders, then mux onto the video). */
+  readonly audioOnly?: boolean;
+};
+
+export const LilleFilm: React.FC<FilmProps> = ({ audioOnly = false }) => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
-    <FilmShot offset={0} />
+    {audioOnly ? null : <FilmShot offset={0} />}
     <FilmAudio from={0} to={TOTAL_SECONDS} />
   </AbsoluteFill>
 );
@@ -221,7 +221,7 @@ export const CUT_PIECES: readonly {
 ];
 export const CUT_SECONDS = CUT_PIECES.reduce((s, p) => s + (p.to - p.from), 0);
 
-export const LilleCut15: React.FC = () => {
+export const LilleCut15: React.FC<FilmProps> = ({ audioOnly = false }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const frame = useCurrentFrame();
   let start = 0;
@@ -245,7 +245,7 @@ export const LilleCut15: React.FC = () => {
             premountFor={fps}
             name={`Plan ${i + 1}`}
           >
-            <FilmShot offset={p.from} />
+            {audioOnly ? null : <FilmShot offset={p.from} />}
             <FilmAudio from={p.from} to={p.to} edgeFade={0.12} />
           </Sequence>
         );
